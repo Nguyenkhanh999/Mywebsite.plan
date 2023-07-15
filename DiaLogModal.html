@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../css/DiaLogModal.css">
+    <title> Demo Creta Form Dialog </title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
+                    <!-- data-toggle : hiệu ứng dùng để dropdown(thả xuống) 
+                         data-taget : dùng đẻ xác định popup nào được gọi lên  -->
+                    Click Here !
+                </button>
+                <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <!-- Tabindex dùng để chỉ định thử tự của tab , giá trì nằm trong đó sẽ quyết định phàn nào được tab trước -->
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-5 col-lg-5 block-image">
+                                        <img src="../img/khanhnguyen-icon.jpg" class="img-reponsive" alt="">
+                                    </div>
+                                    <div class="col-md-6 col-lg-6 block-contact">
+                                        <h3>Contact Us</h3>
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Enter Your Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Enter Email Address">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Enter Phone Number">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea type="text" cols="20" row=" 4" class="form-control" onblur="if(this.value==''){this.value='Enter Your Massage';}" onfocus="this.value='';"></textarea>
+                                                <!-- onbur : dùng để tạo ra 1 dòng text dung placehoder mà textarea không tạo ra được 
+                                                onfocus : Khi click chuột vào nó sẽ mất đi text mà ở phần onblur đã tạo ra  -->
+
+                                            </div>
+                                            <button typr="Submit" class="btn btn-success pull-left"> Submit </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <div class="pull-left">
+                                    <span> Enter Call: (094) 356 8008 </span>
+                                </div>
+                                <div class="pull-center">
+                                    <span> Email: Khanhuyenit02@gmail.com</span>
+                                </div>
+                                <div class="pull-right">
+
+                                    <span class="glyphicon glyphicon-adress"> Adress: Số 7 Thiền Quang </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bs.min.js"></script>
+</body>
+
+</html>

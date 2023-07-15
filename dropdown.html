@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/menu.css">
+
+
+    <title> Image Responsive </title>
+</head>
+<nav class="navbar navbar-default ">
+    <!--navbar-inverse: đen trắng trắng đen   -->
+    <!-- tao ra cái menu -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <!-- collape có thể co dãn
+                # myNavbar là dữ liệu mà hướng tới cả cụm có id là myNavbar-->
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"> Khánh Nguyễn  </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"> <a href=""> Trang Chủ </a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Dropdown menu 
+                        <!-- data-toggle : Hiệu ứng khi click vào dropdown menu (nó là class dropdown )
+                        Class : dropdown-toggle : dùng để cầm thả , cầm thả cho thẻ -->
+                        <span class="caret"></span>
+                        <!-- caret là mũi tên xổ xuống ở thẻ dropdown -->
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"> Dropdown 1 </a></li>
+                        <li><a href="#"> Dropdown 2 </a></li>
+                        <li><a href="#"> Dropdown 3 </a></li>
+                        <li><a href="#"> Dropdown 4 </a></li>
+                    </ul>
+                </li>
+                <!-- active là phần được chọn -->
+                <li><a href="#"> Trang 1</a></li>
+                <li><a href="#"> Trang 2</a></li>
+            </ul>
+            <form action="/action_page.php" class="navbar-form navbar-left">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Tìm Kiếm">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href=""><span class="glyphicon glyphicon-user"></span>   Đăng Kí </a> </li>
+                <li><a href=""><span class="glyphicon glyphicon-log-in"></span>  Đăng Nhập </a></li>
+            </ul>
+
+        </div>
+
+    </div>
+</nav>
+<div class="container">
+    <h3>Ví Dụ 1 </h3>
+    <p> Demo </p>
+    <p> Demo </p>
+    <p> Demo </p>
+    <h3>Ví Dụ 1 </h3>
+    <p> Demo </p>
+    <h3>Ví Dụ 1 </h3>
+    <p> Demo </p>
+    <p> Demo </p>
+
+
+</div>
+
+<body>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bs.min.js"></script>
+
+</body>
+
+</html>
